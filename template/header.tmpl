@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>goweb</title>
+</head>
+<body>
+
+
+
+<p>
+    {{ with .URL}}
+    {{ .Scheme}}
+    {{ .Opaque}}
+    {{ .Host}}
+    {{ .Path}}
+    {{end}}
+</p>
+
+{{ range $key,$value:=.Header}}
+<p>
+    Method:{{$.Method}}
+    Key:{{$key}}
+</p>
+<p>Value:
+    <ul>
+        {{range $value}}
+        <li>{{.}}</li>
+        {{end}}
+    </ul>
+
+</p>
+{{end}}
+
+
+
+</body>
+</html>

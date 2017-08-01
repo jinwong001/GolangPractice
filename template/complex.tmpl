@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Go Web</title>
+</head>
+
+<body>
+<p>Package Info:</p>
+<ul>
+    <li>Package name:{{.Name}}</li>
+    <li>Number of func:{{.NumFuncs}}/{{.NumFuncs}}</li>
+    <li>Number of func:{{NumFunc}}</li>
+    {{Str2Html .NumVarsHTML}}
+
+</ul>
+
+
+<p> Logic Comparsion:</p>
+<ul>
+    <li>and:{{ and true true}}</li>
+    <li>or:{{ or true false}}</li>
+    <li>not:{{ not false}}</li>
+    <li>and+or:{{and (and true true) (or true false)}}</li>
+    <li>and + or: {{and (and true true) (or true false)}}</li>
+    <li>and+not:{{and (and true true) (not false)}}</li>
+    <li>NumFuncs >10: {{gt NumFunc 10}}</li>
+    <li>{{ if not (and (gt .NumFuncs 10) (gt .NumVars 100))}}NumFuncs>10 and NumVars >100{{end}}</li>
+</ul>
+
+<p>Pipelines</p>
+<ul>
+    <li>{{"\"output\""}}</li>
+    <li>{{`"output"`}}</li>
+    <li>{{printf "%q" "output"}}</li>
+    <li>{{"output" | printf "%q"}}</li>
+    <li>{{$result:=.NumVars | Divide|Divide|Add}}</li>
+    <li>{{$result|Add|Divide}}</li>
+</ul>
+
+<p>Index:</p>
+<ul>
+    <li>{{index . "NumFuncs"}}</li>
+    <li>{{index . "NumVars"}}</li>
+    <li>{{index .Maps "Level1" "Name"}}</li>
+    <li>{{index . "Maps" "Level1" "Name"}}</li>
+    <li>{{index .Nums 1}}</li>
+    <li>{{index . "Nums" 1}}</li>
+    <li>{{.Maps.Level1.Name}}</li>
+
+</ul>
+
+</body>
+
+</html>
