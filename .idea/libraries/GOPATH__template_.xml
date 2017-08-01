@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="GOPATH &lt;GolangPractice&gt;">
+  <library name="GOPATH &lt;template&gt;">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/../golang.org" />
       <root url="file://$PROJECT_DIR$/../qiniupkg.com" />
