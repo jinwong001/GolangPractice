@@ -24,6 +24,7 @@
     <excluded>
       <root url="file://$PROJECT_DIR$/httpServer" />
       <root url="file://$PROJECT_DIR$/middleware" />
+      <root url="file://$PROJECT_DIR$/websocket" />
       <root url="file://$PROJECT_DIR$/rpcClient" />
       <root url="file://$PROJECT_DIR$/fileServer" />
       <root url="file://$PROJECT_DIR$/rpc" />

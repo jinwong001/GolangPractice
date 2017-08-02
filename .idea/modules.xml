@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/rpcClient/rpcClient.iml" filepath="$PROJECT_DIR$/rpcClient/rpcClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc/server.iml" filepath="$PROJECT_DIR$/rpc/server.iml" />
       <module fileurl="file://$PROJECT_DIR$/template/template.iml" filepath="$PROJECT_DIR$/template/template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/websocket/websocket.iml" filepath="$PROJECT_DIR$/websocket/websocket.iml" />
     </modules>
   </component>
 </project>
