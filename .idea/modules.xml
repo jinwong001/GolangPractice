@@ -3,7 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GolangPractice.iml" filepath="$PROJECT_DIR$/GolangPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc/client.iml" filepath="$PROJECT_DIR$/rpc/client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fileServer/fileServer.iml" filepath="$PROJECT_DIR$/fileServer/fileServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httpServer/httpServer.iml" filepath="$PROJECT_DIR$/httpServer/httpServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/middleware/middleware.iml" filepath="$PROJECT_DIR$/middleware/middleware.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc/rpc.iml" filepath="$PROJECT_DIR$/rpc/rpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpcClient/rpcClient.iml" filepath="$PROJECT_DIR$/rpcClient/rpcClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc/server.iml" filepath="$PROJECT_DIR$/rpc/server.iml" />
       <module fileurl="file://$PROJECT_DIR$/template/template.iml" filepath="$PROJECT_DIR$/template/template.iml" />
     </modules>
   </component>
