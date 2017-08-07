@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf0999ef-e7b5-48e6-b859-20607f070623" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flag/flag.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flag/main.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/GOPATH__GolangPractice_.xml" afterPath="$PROJECT_DIR$/.idea/libraries/GOPATH__GolangPractice_.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/GOPATH__middleware_.xml" afterPath="$PROJECT_DIR$/.idea/libraries/GOPATH__middleware_.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/GOPATH__template_.xml" afterPath="$PROJECT_DIR$/.idea/libraries/GOPATH__template_.xml" />
@@ -731,12 +733,12 @@
       <workItem from="1501643855637" duration="731000" />
       <workItem from="1501661085700" duration="8491000" />
       <workItem from="1501839388781" duration="2842000" />
-      <workItem from="1502105419764" duration="130000" />
+      <workItem from="1502105419764" duration="166000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15566000" />
+    <option name="totallyTimeSpent" value="15602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
