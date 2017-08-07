@@ -1,9 +1,9 @@
 package main
 
 import (
-	"os"
-	"fmt"
 	"flag"
+	"fmt"
+	"os"
 )
 
 func main() {
@@ -23,14 +23,15 @@ func main() {
 	//
 	//fmt.Println(&wordPtr)
 
-
 	//os.Args 提供原始命令行参数访问功能。注意，切片中的第一个参数是该程序的路径，并且 os.Args[1:]保存所有程序的的参数。
 	argsWithProg := os.Args
-	argsWithoutProg := os.Args[1:]
-	args1 := argsWithProg[1]
 	fmt.Println("argsWithProg", argsWithProg)
-	fmt.Println("argsWithoutProg", argsWithoutProg)
-	fmt.Println("args1", args1)
+	if len(os.Args) > 1 {
+		argsWithoutProg := os.Args[1:]
+		args1 := argsWithProg[1]
+		fmt.Println("argsWithoutProg", argsWithoutProg)
+		fmt.Println("args1", args1)
+	}
 
 	//标志 word并带有一个简短的描述。这里的 flag.String 函数返回一个字符串指针（不是一个字符串值），在下面我们会看到是如何使用这个指针的。
 	wordPtr := flag.String("word", "foo", "a string")
@@ -49,7 +50,5 @@ func main() {
 	fmt.Println("numbPtr", *numbPtr)
 	fmt.Println("boolPtr", *boolPtr)
 	fmt.Println("svar", svar)
-
-
 
 }
