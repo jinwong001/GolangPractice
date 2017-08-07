@@ -2,24 +2,16 @@
   <library name="GOPATH &lt;template&gt;">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/../golang.org" />
-      <root url="file://$PROJECT_DIR$/../qiniupkg.com" />
       <root url="file://$PROJECT_DIR$/../gopkg.in" />
-      <root url="file://$PROJECT_DIR$/../middle" />
-      <root url="file://$PROJECT_DIR$/../sourcegraph.com" />
       <root url="file://$PROJECT_DIR$/../beeblog" />
       <root url="file://$PROJECT_DIR$/../github.com" />
-      <root url="file://$PROJECT_DIR$/../test" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="file://$PROJECT_DIR$/../golang.org" />
-      <root url="file://$PROJECT_DIR$/../qiniupkg.com" />
       <root url="file://$PROJECT_DIR$/../gopkg.in" />
-      <root url="file://$PROJECT_DIR$/../middle" />
-      <root url="file://$PROJECT_DIR$/../sourcegraph.com" />
       <root url="file://$PROJECT_DIR$/../beeblog" />
       <root url="file://$PROJECT_DIR$/../github.com" />
-      <root url="file://$PROJECT_DIR$/../test" />
     </SOURCES>
     <excluded>
       <root url="file://$PROJECT_DIR$/httpServer" />
@@ -27,6 +19,7 @@
       <root url="file://$PROJECT_DIR$/websocket" />
       <root url="file://$PROJECT_DIR$/rpcClient" />
       <root url="file://$PROJECT_DIR$/fileServer" />
+      <root url="file://$PROJECT_DIR$/flag" />
       <root url="file://$PROJECT_DIR$/rpc" />
       <root url="file://$PROJECT_DIR$/template" />
       <root url="file://$PROJECT_DIR$" />
