@@ -2,10 +2,10 @@ package main
 
 import (
 	"net/http"
-	"qiniupkg.com/x/log.v7"
 	"time"
 	"os"
 	"os/signal"
+	"log"
 )
 
 func main1() {
@@ -13,7 +13,7 @@ func main1() {
 		w.Write([]byte("hello world"))
 	})
 	http.HandleFunc("/say", say)
-	log.Info("server is starting ")
+	log.Println("server is starting ")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 
 }
@@ -44,12 +44,12 @@ func main() {
 
 	}()
 
-	log.Info("server is starting...")
+	log.Println("server is starting...")
 	err := server.ListenAndServe()
 	if err == http.ErrServerClosed {
-		log.Warn("server is closed under request")
+		log.Println("server is closed under request")
 	} else if (err != nil) {
-		log.Error("server is closed unexpected")
+		log.Println("server is closed unexpected")
 	}
 
 }
