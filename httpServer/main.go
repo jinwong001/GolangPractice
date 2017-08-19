@@ -6,10 +6,12 @@ import (
 	"os"
 	"os/signal"
 	"log"
+	"fmt"
 )
 
 func main1() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+
 		w.Write([]byte("hello world"))
 	})
 	http.HandleFunc("/say", say)
@@ -19,6 +21,47 @@ func main1() {
 }
 
 func say(w http.ResponseWriter, r *http.Request) {
+	////Form：存储了post、put和get参数，在使用之前需要调用ParseForm方法。并且以post参数为先
+	////http.request在解析参数的时候会将同名的参数都放进同一个数组里，所以这里要用[0]获取到第一个。
+	////PostForm：存储了post、put参数，在使用之前需要调用ParseForm方法。
+	////MultipartForm：存储了包含了文件上传的表单的post参数，在使用前需要调用ParseMultipartForm方法。
+
+	//
+	////r.ParseForm()
+	////if len(r.Form["id"]) > 0 {
+	////	fmt.Fprintln(w, r.Form["id"][0])
+	////}
+	//
+	////所以表单enctype要设置成multipart/form-data。此时无法通过PostFormValue来获取id的值
+	//
+	//r.PostForm()
+	//
+	//r.PostFormValue("Id")
+	//
+	//
+	//
+	//queryForm, err := url.ParseQuery(r.URL.RawQuery)
+	//if err == nil && len(queryForm["id"]) > 0 {
+	//	fmt.Fprintln(w, queryForm["id"][0])
+	//}
+	//
+	//
+	//
+	//r.ParseForm()
+	//r.PostForm("Id")
+	//
+	//
+	//
+	//r.ParseMultipartForm(32 << 20)
+	//if r.MultipartForm != nil {
+	//	values := r.MultipartForm.Value["id"]
+	//	if len(values) > 0 {
+	//		fmt.Fprintln(w, values[0])
+	//	}
+	//}
+
+
+
 	w.Write([]byte("say hi"))
 	http.Error(w,"error",http.StatusNotFound)
 }

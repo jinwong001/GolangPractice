@@ -4,6 +4,8 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"path/filepath"
+	"runtime"
 )
 
 func main() {
@@ -26,6 +28,8 @@ func main() {
 	//os.Args 提供原始命令行参数访问功能。注意，切片中的第一个参数是该程序的路径，并且 os.Args[1:]保存所有程序的的参数。
 	argsWithProg := os.Args
 	fmt.Println("argsWithProg", argsWithProg)
+	fmt.Println("argsWithProg", argsWithProg[0])
+	fmt.Println("argsWithProg", filepath.Base(argsWithProg[0]))
 	if len(os.Args) > 1 {
 		argsWithoutProg := os.Args[1:]
 		args1 := argsWithProg[1]
@@ -50,5 +54,6 @@ func main() {
 	fmt.Println("numbPtr", *numbPtr)
 	fmt.Println("boolPtr", *boolPtr)
 	fmt.Println("svar", svar)
+
 
 }
