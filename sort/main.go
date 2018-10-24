@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"sort"
+	"strings"
 )
 
 type Person struct {
@@ -56,4 +57,8 @@ func main() {
 	
 	sort.Sort(ByName{ps}) //按照Name 升序
 	fmt.Println(ps)
+
+    ip:="1222"
+	ips := strings.Split(ip, ",")
+	fmt.Println(ips)
 }

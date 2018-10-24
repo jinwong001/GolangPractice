@@ -1,0 +1,3 @@
+[Info]/Users/wanny/Desktop/gowork/src/GolangPractice/log/main.go:55: A Info message here
+[Debug]/Users/wanny/Desktop/gowork/src/GolangPractice/log/main.go:57: A Debug Message here 
+[Warn]2018/10/23 10:49:44 /Users/wanny/Desktop/gowork/src/GolangPractice/log/main.go:60: A Warn Message here 

@@ -9,4 +9,5 @@
 ### 7. sync 同步
 ### 8. httpRequest 网络请求
 ### 9. flag     flag 与os.Args
-### 10 closure   闭包
+### 10. closure   闭包
+### 11. log      golang 日志

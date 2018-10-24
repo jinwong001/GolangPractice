@@ -5,10 +5,11 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
-	"runtime"
 )
 
 func main() {
+	// href ="https://www.cnblogs.com/sunailong/p/7866660.html"
+
 	//var ip = flag.Int("ip", 2, "help message for flagname")
 	//log.Printf("flag ip:%d",&ip)
 	//
@@ -46,6 +47,7 @@ func main() {
 	var svar string
 	flag.StringVar(&svar, "svar", "bar", "a string var")
 
+
 	flag.Parse()
 
 	// 运行时 go run flag/main.go  -word="hh" -numb=34 -fork=true
@@ -54,6 +56,4 @@ func main() {
 	fmt.Println("numbPtr", *numbPtr)
 	fmt.Println("boolPtr", *boolPtr)
 	fmt.Println("svar", svar)
-
-
 }
