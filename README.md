@@ -11,3 +11,6 @@
 ### 9. flag     flag 与os.Args
 ### 10. closure   闭包
 ### 11. log      golang 日志
+### 12. cron     定时任务
+### 13. file   读文件，读数据流
+### 14. test   go test
