@@ -25,26 +25,23 @@ func (ps PersonSlice) Swap(i, j int) {
 // 	return ps[j].Age < ps[i].Age //重写Less()方法，从大到小
 // }
 
-type ByName struct{
+type ByName struct {
 	PersonSlice
 }
 
-func( bn ByName)Less(i,j int) bool{
-	return bn.PersonSlice[i].Name<bn.PersonSlice[j].Name
+func (bn ByName) Less(i, j int) bool {
+	return bn.PersonSlice[i].Name < bn.PersonSlice[j].Name
 }
 
-type ByAge struct{
+type ByAge struct {
 	PersonSlice
 }
 
-func( ba ByAge)Less(i,j int) bool{
-	return ba.PersonSlice[i].Age<ba.PersonSlice[j].Age
+func (ba ByAge) Less(i, j int) bool {
+	return ba.PersonSlice[i].Age < ba.PersonSlice[j].Age
 }
 
-
-
-
-func main() {
+func main2() {
 	ps := []Person{
 		{"zhang san", 12},
 		{"li si  ", 14},
@@ -54,11 +51,14 @@ func main() {
 	sort.Sort(ByAge{ps}) //按照Age 升序
 	fmt.Println(ps)
 
-	
 	sort.Sort(ByName{ps}) //按照Name 升序
 	fmt.Println(ps)
 
-    ip:="1222"
+	ip := "1222"
 	ips := strings.Split(ip, ",")
 	fmt.Println(ips)
+}
+
+func main() {
+
 }

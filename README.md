@@ -15,3 +15,4 @@
 ### 13. file   读文件，读数据流
 ### 14. test   go test
 ### 15. go-redis   go-redis
+### 16. rand   随机数
