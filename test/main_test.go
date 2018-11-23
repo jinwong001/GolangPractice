@@ -4,6 +4,7 @@ import (
 	"testing"
 	"strconv"
 	"time"
+	"runtime"
 )
 
 // mongo 测试案例
@@ -20,4 +21,10 @@ func TestMngoId2oTime(t *testing.T) {
 	}
 	tim := time.Unix(num, 0)
 	t.Logf("time:%s", tim)
+}
+
+func TestRuntime(t *testing.T) {
+	buf := make([]byte, 1<<16)
+	runtime.Stack(buf, true) // true 可以调用其他线程 stack traces,否则当前线程
+	t.Logf("[start all stack]----------------  %s   ----------------[all stack end]", buf)
 }

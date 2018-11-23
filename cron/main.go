@@ -1,29 +1,12 @@
 package main
 
 import (
-	"github.com/astaxie/beego/httplib"
-	"log"
 	"fmt"
 	"time"
 	"github.com/robfig/cron"
 )
 
 func main() {
-	req := httplib.Get("https://getman.cn/echo").Debug(true)
-	//.Debug(true)
-	str, err := req.String()
-	if err != nil {
-		log.Fatal(err)
-	}
-	fmt.Println(str)
-
-	go func() {
-		for {
-			//fmt.Println(time.Now())
-			<-time.After(3 * time.Second)
-		}
-	}()
-
 	// cron 参考  https://www.cnblogs.com/zuxingyu/p/6023919.html
 	c := cron.New()
 	// * * * * * ？  秒 分 时  日  月  星期
