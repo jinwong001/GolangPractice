@@ -1,9 +1,10 @@
-package main
+package socket
 
 import (
-	"github.com/Go-zh/net/websocket"
-	"net/http"
+	"golang.org/x/net/websocket"
+	"io"
 	"log"
+	"net/http"
 	"fmt"
 	"text/template"
 )

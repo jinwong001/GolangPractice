@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 	"html/template"
-	"qiniupkg.com/x/log.v7"
+	"github.com/sirupsen/logrus"
 	"golang.org/x/net/websocket"
 )
 
@@ -54,17 +54,17 @@ func echo(ws *websocket.Conn) {
 
 	for {
 		if err := websocket.Message.Receive(ws, &str); err != nil {
-			log.Println("can't receive")
+			logrus.Println("can't receive")
 			break
 		}
 
-		log.Println("Received back from client: " + str)
+		logrus.Println("Received back from client: " + str)
 
 		if err := websocket.Message.Send(ws, str); err != nil {
-			log.Println("can't send")
+			logrus.Println("can't send")
 			break
 		}
-		log.Println("sended message to client: " + str)
+		logrus.Println("sended message to client: " + str)
 
 	}
 
@@ -74,6 +74,6 @@ func main() {
 	http.HandleFunc("/send", myHander)
 	http.Handle("/", websocket.Handler(echo))
 
-	log.Print("serve is starting...")
-	log.Fatal(http.ListenAndServe(":1234", nil))
+	logrus.Print("serve is starting...")
+	logrus.Fatal(http.ListenAndServe(":1234", nil))
 }
